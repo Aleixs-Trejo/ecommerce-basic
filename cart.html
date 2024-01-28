@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header__mobile">
+      <h1 class="logo">AlesisCommerce</h1>
+      <button class="open__menu" id="open__menu">
+        <i class="bi bi-list"></i>
+      </button>
+    </header>
+    <aside class="aside">
+      <header class="aside__header">
+        <h1 class="logo">Alesis Commerce</h1>
+      </header>
+      <nav class="aside__nav">
+        <ul>
+          <li><a href="./index.html" class="button__menu button__back"><i class="bi bi-arrow-return-left"></i> Continue buying</a></li>
+          <li><a href="./cart.html" class="button__menu button__cart active"><i class="bi bi-cart-fill"></i> Cart</a></li>
+        </ul>
+      </nav>
+      <footer class="aside__footer">
+        <p class="footer__content">© 2023 Alesis uwu</p>
+      </footer>
+    </aside>
+    <main class="main">
+      <h2 class="main__title">Cart</h2>
+      <div class="container__cart">
+        <p id="cart__empty" class="cart__empty">Your cart is empty. 😔</p>
+        <div id="cart__products" class="cart__products disabled">
+          <!----------------------- ESTO JALA DEL LOCALSTORAGE ----------------------->
+        </div>
+        <div id="cart__actions" class="cart__actions disabled">
+          <div class="cart__actions__left">
+            <button id="cart__actions__empty" class="cart__actions__empty">Empty The Cart</button>
+          </div>
+          <div class="cart__actions__right">
+            <div class="cart__actions__total">
+              <p>Total:</p>
+              <p id="total">$200</p>
+            </div>
+            <button id="cart__actions__buy" class="cart__actions__buy">Buy Now</button>
+          </div>
+        </div>
+        <p id="cart__bought" class="cart__bought disabled">Thank you for your purchase, come back soon! 😄</p>
+      </div>
+    </main>
+  </div>
+
+  <script src="./js/cart.js"></script>
+  <script src="./js/menu.js"></script>
+</body>
+</html>
